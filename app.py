@@ -276,14 +276,21 @@ def main():
             
             # 모바일 친화적 버튼 레이아웃
             submitted_with_demo = st.form_submit_button(
-                "🚀 구독 신청 및 최신 공지 즉시 체험 메일 받기",
+                "🚀 구독 신청 (최신 공지 즉시 받아보기)",
                 type="primary",
                 use_container_width=True,
+                help="구독과 동시에 현재 올라와 있는 최신 공지 요약 메일을 바로 보내드립니다. (심사위원 및 첫 사용자 추천)",
             )
+            st.caption("💡 **첫 방문자 & 심사위원 추천:** 구독 완료와 동시에 **최신 공지 브리핑 메일을 즉시 발송**해 드립니다.")
+
+            st.markdown("<div style='margin-top: 10px;'></div>", unsafe_allow_html=True)
+
             submitted_only = st.form_submit_button(
-                "💾 설정만 구독 등록하기",
+                "📬 일반 구독 (새 글 등록 시에만 받기)",
                 use_container_width=True,
+                help="지금은 메일을 발송하지 않고, 앞으로 새 공지가 올라올 때부터 알림을 받습니다.",
             )
+            st.caption("ℹ️ 지금 당장 메일을 받지 않고, **새 공지가 새로 등록될 때부터 알림**을 받으려면 이 버튼을 누르세요.")
 
         if submitted_with_demo or submitted_only:
             if not user_email:
