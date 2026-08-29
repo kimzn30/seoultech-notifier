@@ -1,0 +1,17 @@
+[
+  {
+    "id": "academic",
+    "name": "학사공지",
+    "url": "https://www.seoultech.ac.kr/service/info/matters/"
+  },
+  {
+    "id": "scholarship",
+    "name": "장학공지",
+    "url": "https://www.seoultech.ac.kr/service/info/janghak/"
+  },
+  {
+    "id": "contest",
+    "name": "공모/외부행사",
+    "url": "https://www.seoultech.ac.kr/service/board/rec/"
+  }
+]
